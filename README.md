@@ -1,15 +1,16 @@
-
 # laravel-chartjs - Chart.js v2 wrapper for Laravel 5.x
 
-Simple package to facilitate and automate the use of charts in Laravel 5.x
+Simple package to facilitate and automate the use of charts in Laravel 6.x
 using the [Chart.js](http://www.chartjs.org/) v2 library from Nick Downie.
 
 # Setup:
+
 ```
 composer require fx3costa/laravelchartjs
 ```
 
 And add the Service Provider in your file config/app.php:
+
 ```php
 Fx3costa\LaravelChartJs\Providers\ChartjsServiceProvider::class
 ```
@@ -60,6 +61,7 @@ Since the current version allows it to add simple json string based options, it 
 Using the method optionsRaw(string) its possible to add a the options in raw format:
 
 Passing string format like a json
+
 ```php
         $chart->optionsRaw("{
             legend: {
@@ -69,7 +71,7 @@ Passing string format like a json
                 xAxes: [{
                     gridLines: {
                         display:false
-                    }  
+                    }
                 }]
             }
         }");
@@ -98,10 +100,10 @@ $chart->optionsRaw([
 ]);
 ```
 
-
 # Examples
 
 1 - Line Chart / Radar Chart:
+
 ```php
 // ExampleController.php
 
@@ -144,8 +146,8 @@ return view('example', compact('chartjs'));
 </div>
 ```
 
-
 2 - Bar Chart:
+
 ```php
 // ExampleController.php
 
@@ -178,8 +180,8 @@ return view('example', compact('chartjs'));
 </div>
 ```
 
-
 3 - Pie Chart / Doughnut Chart:
+
 ```php
 // ExampleController.php
 
@@ -207,7 +209,6 @@ return view('example', compact('chartjs'));
 </div>
 ```
 
-
 # OBS:
 
 This README, as well as the package, is in development, but will be constantly updated and I will keep you informed as soon as
@@ -216,4 +217,5 @@ it is ready for production. Thank you for understanding.
 Any questions or suggestions preferably open a issue!
 
 # License
+
 LaravelChartJs is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
